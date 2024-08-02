@@ -51,7 +51,7 @@ const Hero = () => {
                 className="relative"
               >
                 <div className="relative z-10 space-y-4">
-                  <h3 className="text-2xl">Welcome to Binary beans,</h3>
+                  <h3 className="text-2xl">Welcome to Binary Beans,</h3>
                   <p className="text-sm opacity-55 leading-loose">
                     We blend the programming world with the rich aroma of
                     freshly brewed coffee. Our cozy atmosphere is designed to
@@ -124,7 +124,7 @@ const Hero = () => {
               </h2>
               <div className="relative">
                 <div className="relative z-10 space-y-4">
-                  <h3 className="text-2xl">Blvck Tumbler</h3>
+                  <h3 className="text-2xl">The Ultimate Haven</h3>
                   <p className="text-sm opacity-55 leading-loose">
                     We understand that great code requires great coffee. Our
                     menu features a variety of premium coffee blends, each
