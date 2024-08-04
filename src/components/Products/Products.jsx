@@ -67,13 +67,13 @@ const Products = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView={"visible"}
-        viewport={{ amount: 0.8 }}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+        viewport={{ once: true }}
+        className="grid grid-cols-1 md:grid-cols-3 gap-8"
       >
         {productsData.map((product) => (
           <motion.div
             variants={cardVariants}
-            className="text-center p-4 space-y-6"
+            className="text-center p-4 space-y-5"
           >
             <img
               src={product.image}

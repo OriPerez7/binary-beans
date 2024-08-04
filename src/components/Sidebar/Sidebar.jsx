@@ -7,7 +7,7 @@ const Sidebar = () => {
     <motion.div
       initial={{ x: "100%" }}
       whileInView={{ x: 0 }}
-      className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-primary/80 to-primaryDark/80 backdrop-blur-sm z-10"
+      className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-primary/80 to-primaryDark/80 backdrop-blur-sm z-40"
     >
       <div className="w-full h-full flex flex-col justify-evenly items-center">
         <div className="flex flex-col justify-center items-center gap-6 text-white">

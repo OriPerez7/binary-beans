@@ -28,7 +28,7 @@ const Hero = () => {
             <div className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28">
               <motion.h2
                 initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   type: "spring",
                   stiffness: 100,
@@ -69,6 +69,7 @@ const Hero = () => {
               <motion.img
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true}}
                 transition={{
                   type: "spring",
                   stiffness: 100,
@@ -108,32 +109,34 @@ const Hero = () => {
             </div>
 
             {/* third div */}
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-                delay: 0.9,
-              }}
-              className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28"
-            >
-              <h2 className="opacity-0 text-7xl font-bold leading-tight ml-14">
-                The ultimate haven
-              </h2>
-              <div className="relative">
-                <div className="relative z-10 space-y-4">
-                  <h3 className="text-2xl">The Ultimate Haven</h3>
-                  <p className="text-sm opacity-55 leading-loose">
-                    We understand that great code requires great coffee. Our
-                    menu features a variety of premium coffee blends, each
-                    meticulously roasted to perfection.
-                  </p>
+            <div className="hidden lg:block">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.9,
+                }}
+                className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28"
+              >
+                <h2 className="opacity-0 text-7xl font-bold leading-tight ml-14">
+                  The ultimate haven
+                </h2>
+                <div className="relative">
+                  <div className="relative z-10 space-y-4">
+                    <h3 className="text-2xl">The Ultimate Haven</h3>
+                    <p className="text-sm opacity-55 leading-loose">
+                      We understand that great code requires great coffee. Our
+                      menu features a variety of premium coffee blends, each
+                      meticulously roasted to perfection.
+                    </p>
+                  </div>
+                  <div className="absolute -top-6 -right-10 w-[250px] h-[190px] bg-darkGray/50"></div>
                 </div>
-                <div className="absolute -top-6 -right-10 w-[250px] h-[190px] bg-darkGray/50"></div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
 
